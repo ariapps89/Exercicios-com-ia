@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Exemplo de Variáveis e decisões</h1>
+    <button onclick="verificarIdade()">Verificar idade</button>
+    <script>
+        function verificarIdade(){
+            let nome = prompt("Qual é o seu nome?");
+            let idade = prompt("Quantos anos você tem?");
+
+            if(idade >= 18){
+                alert("Olá," +nome+ "! você é maior de idade");
+            }
+            else{
+                alert("Olá," +nome+ "! você é menor de idade");
+            }
+        }
+    </script>
+</body>
+</html>

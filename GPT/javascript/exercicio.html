@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           text-align: center;
+            border: 2px solid blue;
+            height: 100vh;
+        }
+        div{
+            border: 3px solid black;
+            height: 50vh;
+            width: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            border: 3px solid green;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio como mudar cores</h1>
+    <div id="d1">
+        <p>Exemplo div</p>
+    </div>
+    <button onclick="mudarDiv()">Mudar cor da DIV</button>
+
+    <script>
+        function mudarDiv (){
+           // document.body.style.backgroundColor = "green";
+            document.getElementById("d1").style.backgroundColor="lightblue"
+           // let div = document.getElementById("d1");
+            //div.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>

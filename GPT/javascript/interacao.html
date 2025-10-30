@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interação</title>
+</head>
+<body>
+    <h1>Bem vindo</h1>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <p id="mensagem"></p>
+    <button onclick="mostrarTexto()">Enviar</button>
+
+    <script>
+        function mostrarTexto(){
+            let nome = document.getElementById("nome").value
+
+            if(nome === ""){
+                document.getElementById("mensagem").innerHTML = "Por favor, digite seu nome!"
+            } else{
+                document.getElementById("mensagem").innerHTML = "Olá, " +nome+ " Seja bem vindo"
+            }
+        }
+    </script>
+</body>
+</html>

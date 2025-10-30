@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+    
+    <!--Comentario HTML-->
+        <h1>Mudando cores com classes</h1>
+        <button class="colorir">Botão1</button>
+        <button class="colorir">Botão2</button>
+        <button class="colorir">Botão3</button>
+        <button class="colorir">Botão4</button>
+        <br><br>
+        <button onclick="mudarCor()">Mudar cores</button>
+        
+        <script>
+            /*
+                function mudarCor(){
+                    let botoes = document.getElementsByClassName("colorir");
+                    for (let i = 0; i < botoes.length; i++ ) {
+                        botoes[i].style.backgroundColor = "lightgreen";
+                    }
+                }
+              */  
+        //segunda opção usando querySelectorAll     
+        function mudarCor(){
+            document.querySelectorAll(".colorir").forEach(botao => {
+                botao.style.backgroundColor = "lightgreen";
+            });
+        }
+    </script>
+</body>
+</html>

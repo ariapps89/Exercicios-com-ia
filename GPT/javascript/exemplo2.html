@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudar cor de vários botões</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mudando cores com classes</h1>
+
+  <button class="colorir">Botão 1</button>
+  <button class="colorir">Botão 2</button>
+  <button class="colorir">Botão 3</button>
+  <button class="colorir">Botão 4</button>
+
+  <br><br>
+  <button onclick="mudarCores()">Mudar cor dos botões</button>
+
+  <script>
+    function mudarCores() {
+      document.querySelectorAll(".colorir").forEach(botao => {
+        botao.style.backgroundColor = "lightgreen";
+      });
+    }
+  </script>
+</body>
+</html>
